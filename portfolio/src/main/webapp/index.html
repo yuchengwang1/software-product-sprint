@@ -15,8 +15,17 @@
       <img src="images/tuantuan1.jpg" />
       <p>Click <a href="/hello">here</a> to see content created by server code.</p>
       <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
+      <button onclick="addRandomIntroduction()">Hello</button>
       <div id="greeting-container"></div>
     </div>
+    <form method="POST">
+        <p>Enter some text here:</p>
+        <textarea name="text-input">hello world</textarea>
+        <br/>
+        <input type="submit" />
+    </form>
+    <form action="/form-handler" method="POST">
+        ...
+        @WebServlet("/form-handler")
   </body>
 </html>
